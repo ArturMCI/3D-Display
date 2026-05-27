@@ -1,0 +1,7 @@
+# Ignore Altium generated folders everywhere
+**/History/
+**/__Previews/
+
+# Optional: ignore contents too
+**/History/**
+**/__Previews/**
