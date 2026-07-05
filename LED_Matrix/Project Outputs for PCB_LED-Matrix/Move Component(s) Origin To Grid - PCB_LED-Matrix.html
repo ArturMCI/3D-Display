@@ -1,0 +1,494 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD26\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">05.07.2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">20:51:21</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc">C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDM2DMKGHDCRSWCPRDP05R3PODCHXTT3R2FCOHM1FCRQC4OXKMXYQO"><h2>Components Origin</h2></a><a name="ID4TY0YSAFUA3JOOPEHDYHBFGDNEHU0I5ZYHRA4DCKW2TGTAPTWRXB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.772mil|Location2.X=1554.134mil|Location1.Y=3367.126mil|Location2.Y=4716.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.772mil|Location2.X=1554.134mil|Location1.Y=3367.126mil|Location2.Y=4716.981mil|Absolute=True">SIP Component J?-TB0011-350-08BE (35mm,89.5mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5542.323mil|Location2.X=5897.247mil|Location1.Y=2624.343mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5542.323mil|Location2.X=5897.247mil|Location1.Y=2624.343mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C48-100nF (143mm,68mm) on Top-Layer</acronym></a> - Origin changed from [143mm:68mm] to [143mm:68mm]</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5030.512mil|Location2.X=5391.261mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5030.512mil|Location2.X=5391.261mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C47-100nF (130mm,68mm) on Top-Layer</acronym></a> - Origin changed from [130mm:68mm] to [130mm:68mm]</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4518.701mil|Location2.X=4875.848mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4518.701mil|Location2.X=4875.848mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C46-100nF (117mm,68mm) on Top-Layer</acronym></a> - Origin changed from [117mm:68mm] to [117mm:68mm]</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4006.89mil|Location2.X=4359.535mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4006.89mil|Location2.X=4359.535mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C45-100nF (104mm,68mm) on Top-Layer</acronym></a> - Origin changed from [104mm:68mm] to [104mm:68mm]</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3534.449mil|Location2.X=3886.163mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3534.449mil|Location2.X=3886.163mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C44-100nF (92mm,68mm) on Top-Layer</acronym></a> - Origin changed from [92mm:68mm] to [92mm:68mm]</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3022.638mil|Location2.X=3378.366mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3022.638mil|Location2.X=3378.366mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C43-100nF (79mm,68mm) on Top-Layer</acronym></a> - Origin changed from [79mm:68mm] to [79mm:68mm]</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2865.403mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2510.827mil|Location2.X=2865.403mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C42-100nF (66mm,68mm) on Top-Layer</acronym></a> - Origin changed from [66mm:68mm] to [66mm:68mm]</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1999.016mil|Location2.X=2328.674mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1999.016mil|Location2.X=2328.674mil|Location1.Y=2625mil|Location2.Y=2729.331mil|Absolute=True">SMT Small Component C41-100nF (53mm,68mm) on Top-Layer</acronym></a> - Origin changed from [53mm:68mm] to [53mm:68mm]</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5874.319mil|Location1.Y=3111.876mil|Location2.Y=3216.207mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5874.319mil|Location1.Y=3111.876mil|Location2.Y=3216.207mil|Absolute=True">SMT Small Component C40-100nF (142.375mm,80.367mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5373.407mil|Location1.Y=3111.876mil|Location2.Y=3216.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5373.407mil|Location1.Y=3111.876mil|Location2.Y=3216.206mil|Absolute=True">SMT Small Component C39-100nF (129.659mm,80.367mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4869.053mil|Location1.Y=3111.875mil|Location2.Y=3216.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4869.053mil|Location1.Y=3111.875mil|Location2.Y=3216.206mil|Absolute=True">SMT Small Component C38-100nF (116.951mm,80.367mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4019.519mil|Location2.X=4373.303mil|Location1.Y=3111.875mil|Location2.Y=3216.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4019.519mil|Location2.X=4373.303mil|Location1.Y=3111.875mil|Location2.Y=3216.206mil|Absolute=True">SMT Small Component C37-100nF (104.321mm,80.367mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3865.506mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3865.506mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True">SMT Small Component C36-100nF (91.535mm,80.44mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.833mil|Location2.X=3374.923mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.833mil|Location2.X=3374.923mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True">SMT Small Component C35-100nF (78.827mm,80.44mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2875.73mil|Location1.Y=3114.763mil|Location2.Y=3219.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2875.73mil|Location1.Y=3114.763mil|Location2.Y=3219.094mil|Absolute=True">SMT Small Component C34-100nF (66.119mm,80.44mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2383.425mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2383.425mil|Location1.Y=3114.764mil|Location2.Y=3219.095mil|Absolute=True">SMT Small Component C33-100nF (53.411mm,80.44mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5869.077mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5869.077mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C32-100nF (142.375mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5346.543mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5346.543mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C31-100nF (129.659mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4866.814mil|Location1.Y=3564.763mil|Location2.Y=3669.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4866.814mil|Location1.Y=3564.763mil|Location2.Y=3669.093mil|Absolute=True">SMT Small Component C30-100nF (116.951mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4366.784mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4366.784mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C29-100nF (104.243mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3869.541mil|Location1.Y=3564.764mil|Location2.Y=3669.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3869.541mil|Location1.Y=3564.764mil|Location2.Y=3669.095mil|Absolute=True">SMT Small Component C28-100nF (91.535mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3366.7mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3366.7mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C27-100nF (78.827mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2866.671mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2866.671mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C26-100nF (66.119mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2363.18mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2363.18mil|Location1.Y=3564.763mil|Location2.Y=3669.094mil|Absolute=True">SMT Small Component C25-100nF (53.411mm,91.87mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5870.324mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5870.324mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C24-100nF (142.375mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.093mil|Location2.X=5369.424mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.093mil|Location2.X=5369.424mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C23-100nF (129.659mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4866.471mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4866.471mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C22-100nF (116.951mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4347.363mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4347.363mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C21-100nF (104.243mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3867.751mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3867.751mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C20-100nF (91.535mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.833mil|Location2.X=3356.721mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.833mil|Location2.X=3356.721mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C19-100nF (78.827mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2855.821mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2855.821mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C18-100nF (66.119mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2354.684mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2354.684mil|Location1.Y=4014.763mil|Location2.Y=4119.094mil|Absolute=True">SMT Small Component C17-100nF (53.411mm,103.3mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5856.09mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5856.09mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C16-100nF (142.375mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5358.268mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5358.268mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C15-100nF (129.659mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4857.369mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4857.369mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C14-100nF (116.951mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4351.335mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4351.335mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C13-100nF (104.243mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3857.619mil|Location1.Y=4464.764mil|Location2.Y=4569.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3857.619mil|Location1.Y=4464.764mil|Location2.Y=4569.095mil|Absolute=True">SMT Small Component C12-100nF (91.535mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3332.353mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3332.353mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C11-100nF (78.827mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2857.873mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2857.873mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C10-100nF (66.119mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2304.493mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2304.493mil|Location1.Y=4464.763mil|Location2.Y=4569.094mil|Absolute=True">SMT Small Component C9-100nF (53.411mm,114.73mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5812.287mil|Location1.Y=4913.754mil|Location2.Y=5018.084mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5517.736mil|Location2.X=5812.287mil|Location1.Y=4913.754mil|Location2.Y=5018.084mil|Absolute=True">SMT Small Component C8-100nF (142.375mm,126.134mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5322.312mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5017.092mil|Location2.X=5322.312mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True">SMT Small Component C7-100nF (129.659mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4823.297mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516.777mil|Location2.X=4823.297mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True">SMT Small Component C6-100nF (116.951mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4293.021mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4016.462mil|Location2.X=4293.021mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True">SMT Small Component C5-100nF (104.243mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3799.005mil|Location1.Y=4914.764mil|Location2.Y=5019.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3516.147mil|Location2.X=3799.005mil|Location1.Y=4914.764mil|Location2.Y=5019.095mil|Absolute=True">SMT Small Component C4-100nF (91.535mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3294.99mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.832mil|Location2.X=3294.99mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True">SMT Small Component C3-100nF (78.827mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2798.861mil|Location1.Y=4914.764mil|Location2.Y=5019.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2515.517mil|Location2.X=2798.861mil|Location1.Y=4914.764mil|Location2.Y=5019.095mil|Absolute=True">SMT Small Component C2-100nF (66.119mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2270.898mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2015.202mil|Location2.X=2270.898mil|Location1.Y=4914.763mil|Location2.Y=5019.094mil|Absolute=True">SMT Small Component C1-100nF (53.411mm,126.16mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=2823.424mil|Location2.Y=3129.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=2823.424mil|Location2.Y=3129.91mil|Absolute=True">Component 48-1655 (142.367mm,74.34mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.172mil|Location1.Y=2823.425mil|Location2.Y=3129.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.172mil|Location1.Y=2823.425mil|Location2.Y=3129.91mil|Absolute=True">Component 47-1655 (129.659mm,74.34mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4478.299mil|Location2.X=4766.828mil|Location1.Y=2823.424mil|Location2.Y=3129.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4478.299mil|Location2.X=4766.828mil|Location1.Y=2823.424mil|Location2.Y=3129.91mil|Absolute=True">Component 46-1655 (117.077mm,74.34mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True">Component 45-1655 (104.243mm,74.09mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True">Component 44-1655 (91.535mm,74.09mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True">Component 43-1655 (78.827mm,74.09mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True">Component 42-1655 (66.119mm,74.09mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=2813.583mil|Location2.Y=3119.91mil|Absolute=True">Component 41-1655 (53.508mm,74.09mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 40-1655 (142.367mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.172mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.172mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 39-1655 (129.659mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 38-1655 (116.951mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 37-1655 (104.243mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 36-1655 (91.535mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.912mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.912mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 35-1655 (78.827mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=3263.582mil|Location2.Y=3569.91mil|Absolute=True">Component 34-1655 (66.119mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=3263.583mil|Location2.Y=3569.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=3263.583mil|Location2.Y=3569.91mil|Absolute=True">Component 33-1655 (53.508mm,85.52mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True">Component 32-1655 (142.367mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True">Component 31-1655 (129.659mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True">Component 30-1655 (116.951mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=3713.584mil|Location2.Y=4019.91mil|Absolute=True">Component 29-1655 (104.243mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=3713.582mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=3713.582mil|Location2.Y=4019.91mil|Absolute=True">Component 28-1655 (91.535mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=3713.582mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=3713.582mil|Location2.Y=4019.91mil|Absolute=True">Component 27-1655 (78.827mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=3713.583mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=3713.583mil|Location2.Y=4019.91mil|Absolute=True">Component 26-1655 (66.119mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=3713.583mil|Location2.Y=4019.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=3713.583mil|Location2.Y=4019.91mil|Absolute=True">Component 25-1655 (53.508mm,96.95mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True">Component 24-1655 (142.367mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True">Component 23-1655 (129.659mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=4163.584mil|Location2.Y=4469.91mil|Absolute=True">Component 22-1655 (116.951mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True">Component 21-1655 (104.243mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True">Component 20-1655 (91.535mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True">Component 19-1655 (78.827mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True">Component 18-1655 (66.119mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1975.299mil|Location2.X=2264.107mil|Location1.Y=4163.583mil|Location2.Y=4469.91mil|Absolute=True">Component 17-1655 (53.508mm,108.38mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 16-1655 (142.367mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.299mil|Location2.X=5262.171mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 15-1655 (129.659mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.299mil|Location2.X=4761.856mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 14-1655 (116.951mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 13-1655 (104.243mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.84mil|Location2.X=3761.226mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 12-1655 (91.535mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.299mil|Location2.X=3260.911mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 11-1655 (78.827mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=4613.583mil|Location2.Y=4919.91mil|Absolute=True">Component 10-1655 (66.119mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1892.299mil|Location2.X=2260.281mil|Location1.Y=4613.583mil|Location2.Y=4820.276mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1892.299mil|Location2.X=2260.281mil|Location1.Y=4613.583mil|Location2.Y=4820.276mil|Absolute=True">Component 9-1655 (53.411mm,119.81mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5474.1mil|Location2.X=5762.486mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 8-1655 (142.367mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.785mil|Location2.X=5262.171mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4973.785mil|Location2.X=5262.171mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 7-1655 (129.659mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.47mil|Location2.X=4761.856mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4473.47mil|Location2.X=4761.856mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 6-1655 (116.951mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.155mil|Location2.X=4261.541mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 5-1655 (104.243mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.807mil|Location2.X=3761.226mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3472.807mil|Location2.X=3761.226mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 4-1655 (91.535mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.525mil|Location2.X=3260.911mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972.525mil|Location2.X=3260.911mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 3-1655 (78.827mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2472.21mil|Location2.X=2760.596mil|Location1.Y=5063.583mil|Location2.Y=5369.321mil|Absolute=True">Component 2-1655 (66.119mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.895mil|Location2.X=2260.281mil|Location1.Y=5063.583mil|Location2.Y=5364.4mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Projekt_Volumetrisches Display\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.895mil|Location2.X=2260.281mil|Location1.Y=5063.583mil|Location2.Y=5364.4mil|Absolute=True">Component 1-1655 (53.411mm,131.24mm) on Top-Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
