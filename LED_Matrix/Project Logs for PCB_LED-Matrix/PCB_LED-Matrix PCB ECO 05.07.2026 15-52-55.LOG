@@ -1,0 +1,30 @@
+Added Component: Designator=J?(TB0011-350-08BE)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sameskydevices.com/product/resource/tb0011-350.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Same Sky"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TB0011-350-08BE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=+5 Pin=J?-2
+Added Pin To Net: NetName=Net1_4 Pin=1-4
+Added Pin To Net: NetName=Net1_4 Pin=J?-8
+Added Net: Name=Net1_4
+Added Pin To Net: NetName=Net9_4 Pin=9-4
+Added Pin To Net: NetName=Net9_4 Pin=J?-7
+Added Net: Name=Net9_4
+Added Pin To Net: NetName=Net17_4 Pin=17-4
+Added Pin To Net: NetName=Net17_4 Pin=J?-6
+Added Net: Name=Net17_4
+Added Pin To Net: NetName=Net25_4 Pin=25-4
+Added Pin To Net: NetName=Net25_4 Pin=J?-5
+Added Net: Name=Net25_4
+Added Pin To Net: NetName=Net33_4 Pin=33-4
+Added Pin To Net: NetName=Net33_4 Pin=J?-4
+Added Net: Name=Net33_4
+Added Pin To Net: NetName=Net41_4 Pin=41-4
+Added Pin To Net: NetName=Net41_4 Pin=J?-3
+Added Net: Name=Net41_4
+Added Member To Class: ClassName=LED_Matrix_MCI_Vorlage Member=Component J? TB0011-350-08BE
