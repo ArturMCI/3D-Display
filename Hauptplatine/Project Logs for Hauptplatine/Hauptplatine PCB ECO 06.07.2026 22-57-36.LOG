@@ -1,0 +1,44 @@
+Added Component: Designator=IC3(SOT95P280X110-6N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/lmr51430xfddcr/texas-instruments.html?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.ti.com/lit/ds/symlink/lmr51420.pdf?ts=1651317966125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMR51430XFDDCR?qs=vvQtp7zwQdOoH7ISqkGKmw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=IC5(SOT95P280X110-6N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/lmr51430xfddcr/texas-instruments.html?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.ti.com/lit/ds/symlink/lmr51420.pdf?ts=1651317966125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-LMR51430XFDDCR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMR51430XFDDCR?qs=vvQtp7zwQdOoH7ISqkGKmw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=L2(INDPM6054X300N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PA4340.332NLT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/pa4340.332nlt/pulse-electronics-corporation?utm_currency=USD&region=europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.arrow.com/en/products/pa4340.332nlt/pulse-electronics-corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Yageo Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PA4340.332NLT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "673-PA4340.332NLT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4340332NLT?qs=%2FzQKu7YvIMZ40DmrCvsoMQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=IC3-1
+Added Pin To Net: NetName=IC1_SW Pin=IC3-2
+Added Pin To Net: NetName=VSYS Pin=IC3-3
+Added Pin To Net: NetName=NetIC3_4 Pin=IC3-4
+Added Pin To Net: NetName=VSYS Pin=IC3-5
+Added Pin To Net: NetName=NetC18_1 Pin=IC3-6
+Added Pin To Net: NetName=GND Pin=IC5-1
+Added Pin To Net: NetName=IC2_SW Pin=IC5-2
+Added Pin To Net: NetName=VSYS Pin=IC5-3
+Added Pin To Net: NetName=NetIC5_4 Pin=IC5-4
+Added Pin To Net: NetName=VSYS Pin=IC5-5
+Added Pin To Net: NetName=NetC28_1 Pin=IC5-6
+Added Pin To Net: NetName=IC2_SW Pin=L2-1
+Added Pin To Net: NetName=5V Pin=L2-2
+Added Member To Class: ClassName=Battery-Management Member=Component IC3 LMR51430XFDDCR
+Added Member To Class: ClassName=Battery-Management Member=Component IC5 LMR51430XFDDCR
+Added Member To Class: ClassName=Battery-Management Member=Component L2 3.3uH
