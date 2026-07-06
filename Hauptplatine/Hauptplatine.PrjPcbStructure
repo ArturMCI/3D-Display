@@ -1,2 +1,2 @@
-Record=TopLevelDocument|FileName=Hauptplatine.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Hauptplatine.SchDoc|FileName=Microcontroller.SchDoc|SheetNumber=2
+Record=TopLevelDocument|FileName=Battery-Management.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Battery-Management.SchDoc|FileName=Microcontroller.SchDoc|SheetNumber=1
