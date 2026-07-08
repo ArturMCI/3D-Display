@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=NetIC1_13 Pin=J2-2
+Removed Pin From Net: NetName=NetIC1_14 Pin=J2-3
+Removed Pin From Net: NetName=NetIC1_15 Pin=J2-4
+Removed Pin From Net: NetName=NetIC1_16 Pin=J2-5
+Removed Pin From Net: NetName=NetIC1_17 Pin=J2-6
+Removed Pin From Net: NetName=NetIC1_18 Pin=J2-7
+Removed Pin From Net: NetName=5V Pin=J2-8
+Removed Pin From Net: NetName=GND Pin=J3-1
+Removed Pin From Net: NetName=NetIC2_13 Pin=J3-2
+Removed Pin From Net: NetName=NetIC2_14 Pin=J3-3
+Removed Pin From Net: NetName=NetIC2_15 Pin=J3-4
+Removed Pin From Net: NetName=NetIC2_16 Pin=J3-5
+Removed Pin From Net: NetName=NetIC2_17 Pin=J3-6
+Removed Pin From Net: NetName=NetIC2_18 Pin=J3-7
+Removed Pin From Net: NetName=5V Pin=J3-8
+Added Pin To Net: NetName=5V Pin=J2-1
+Added Pin To Net: NetName=NetIC1_18 Pin=J2-2
+Added Pin To Net: NetName=NetIC1_17 Pin=J2-3
+Added Pin To Net: NetName=NetIC1_16 Pin=J2-4
+Added Pin To Net: NetName=NetIC1_15 Pin=J2-5
+Added Pin To Net: NetName=NetIC1_14 Pin=J2-6
+Added Pin To Net: NetName=NetIC1_13 Pin=J2-7
+Added Pin To Net: NetName=GND Pin=J2-8
+Added Pin To Net: NetName=5V Pin=J3-1
+Added Pin To Net: NetName=NetIC2_18 Pin=J3-2
+Added Pin To Net: NetName=NetIC2_17 Pin=J3-3
+Added Pin To Net: NetName=NetIC2_16 Pin=J3-4
+Added Pin To Net: NetName=NetIC2_15 Pin=J3-5
+Added Pin To Net: NetName=NetIC2_14 Pin=J3-6
+Added Pin To Net: NetName=NetIC2_13 Pin=J3-7
+Added Pin To Net: NetName=GND Pin=J3-8
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9
+Added Rule: Name=Schematic Supply Nets_10
+Added Rule: Name=Schematic Supply Nets_11
