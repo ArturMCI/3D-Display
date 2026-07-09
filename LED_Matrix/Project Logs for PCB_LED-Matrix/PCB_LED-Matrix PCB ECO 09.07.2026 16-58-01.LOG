@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Added Component: Designator=MH1(MTH)
+Added Component: Designator=MH2(MTH)
+Added Component: Designator=MH3(MTH)
+Added Pin To Net: NetName=GND Pin=MH1-1
+Added Pin To Net: NetName=GND Pin=MH2-1
+Added Pin To Net: NetName=GND Pin=MH3-1
+Added Member To Class: ClassName=LED_Matrix_MCI_Vorlage Member=Component MH1
+Added Member To Class: ClassName=LED_Matrix_MCI_Vorlage Member=Component MH2
+Added Member To Class: ClassName=LED_Matrix_MCI_Vorlage Member=Component MH3
