@@ -1,0 +1,7 @@
+Change Component Comment : Designator=MH1 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH2 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH3 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH4 Old Comment= New Comment=MountingHole
+Added Pin To Net: NetName=GND Pin=MH1-1
+Added Pin To Net: NetName=GND Pin=MH2-1
+Added Pin To Net: NetName=GND Pin=MH3-1
