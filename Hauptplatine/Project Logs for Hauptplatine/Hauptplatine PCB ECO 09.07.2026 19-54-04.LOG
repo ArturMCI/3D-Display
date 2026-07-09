@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=GND Pin=C33-1
+Added Pin To Net: NetName=VSWITCH Pin=C33-2
+Added Member To Class: ClassName=Battery-Management Member=Component C19 10uF
