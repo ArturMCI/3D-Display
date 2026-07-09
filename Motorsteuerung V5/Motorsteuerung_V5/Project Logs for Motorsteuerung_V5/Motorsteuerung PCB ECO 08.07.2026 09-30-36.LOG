@@ -1,0 +1,38 @@
+Added Component: Designator=J4(1725669)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1725669/phoenix-contact?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mpt-05-3-254-1725669?type=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1725669?qs=A%2FKWGUWTCZjmkTL0Oe91ew%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J5(1725669)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1725669/phoenix-contact?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mpt-05-3-254-1725669?type=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1725669?qs=A%2FKWGUWTCZjmkTL0Oe91ew%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J6(1725669)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1725669/phoenix-contact?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-mpt-05-3-254-1725669?type=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1725669"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1725669?qs=A%2FKWGUWTCZjmkTL0Oe91ew%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J4-1
+Added Pin To Net: NetName=Data Res Pin=J4-2
+Added Pin To Net: NetName=5V5 Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J5-2
+Added Pin To Net: NetName=ESC-Signal Pin=J5-3
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=WIPER Pin=J6-2
+Added Pin To Net: NetName=3V3 Pin=J6-3
+Added Member To Class: ClassName=Motorsteuerung_V5 Member=Component J4 1725669
+Added Member To Class: ClassName=Motorsteuerung_V5 Member=Component J5 1725669
+Added Member To Class: ClassName=Motorsteuerung_V5 Member=Component J6 1725669

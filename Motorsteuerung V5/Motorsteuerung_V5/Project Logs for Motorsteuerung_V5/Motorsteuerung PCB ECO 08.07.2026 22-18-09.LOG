@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=12V12 Pin=J3-1
+Added Pin To Net: NetName=NetC10_1 Pin=J3-1
+Change Net Name : Old Net Name=5V5 New Net Name=5V
+Change Net Name : Old Net Name=NetC10_1 New Net Name=12V
+Added Member To Class: ClassName=Motorsteuerung_V5 Member=Component MH3
+Added Rule: Name=Schematic Supply Nets

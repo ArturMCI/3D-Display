@@ -1,0 +1,37 @@
+Update Managed Component C1 From CMP-2007-03742-2[100nf] To CMP-2007-03742-2[C0805C104M5UACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C2 From CMP-03020-034651-1[22uF] To CMP-03020-034651-1[C1210C226K4RACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C3 From CMP-2006-01137-1[10nF] To CMP-2006-01137-1[VJ0603Y103KXJAC] in Motorsteuerung_V5.SchDoc
+Update Managed Component C4 From CMP-03422-000234-1[100nF] To CMP-03422-000234-1[CC0603KRX7R8BB104] in Motorsteuerung_V5.SchDoc
+Update Managed Component C5 From CMP-03422-000234-1[100nF] To CMP-03422-000234-1[CC0603KRX7R8BB104] in Motorsteuerung_V5.SchDoc
+Update Managed Component C6 From CMP-03422-001236-1[4,7uF] To CMP-03422-001236-1[CC0603KRX5R7BB475] in Motorsteuerung_V5.SchDoc
+Update Managed Component C7 From CMP-03422-000234-1[100nF] To CMP-03422-000234-1[CC0603KRX7R8BB104] in Motorsteuerung_V5.SchDoc
+Update Managed Component C8 From CMP-03422-001236-1[4,7uF] To CMP-03422-001236-1[CC0603KRX5R7BB475] in Motorsteuerung_V5.SchDoc
+Update Managed Component C9 From CMP-1035-02737-2[1uF] To CMP-1035-02737-2[CC0603KRX5R7BB105] in Motorsteuerung_V5.SchDoc
+Update Managed Component C10 From CMP-03422-001503-1[2.2uF] To CMP-03422-001503-1[CC1210KKX7R8BB225] in Motorsteuerung_V5.SchDoc
+Update Managed Component C11 From CMP-03020-034651-1[22uF] To CMP-03020-034651-1[C1210C226K4RACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C12 From CMP-2007-03742-2[100nf] To CMP-2007-03742-2[C0805C104M5UACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C13 From CMP-03020-034651-1[22uF] To CMP-03020-034651-1[C1210C226K4RACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C14 From CMP-03422-001503-1[2.2uF] To CMP-03422-001503-1[CC1210KKX7R8BB225] in Motorsteuerung_V5.SchDoc
+Update Managed Component C15 From CMP-03020-034651-1[22uF] To CMP-03020-034651-1[C1210C226K4RACTU] in Motorsteuerung_V5.SchDoc
+Update Managed Component C16 From CMP-00621-107850848-1[100nF] To CMP-00621-107850848-1[CC0805KKX7RYBB104] in Motorsteuerung_V5.SchDoc
+Update Managed Component DS1 From CMP-2000-07593-1[LTST-C170KRKT] To CMP-2000-07593-1[LTST-C170KRKT] in Motorsteuerung_V5.SchDoc
+Update Managed Component DS2 From CMP-2000-06620-1[LTST-C170KGKT] To CMP-2000-06620-1[LTST-C170KGKT] in Motorsteuerung_V5.SchDoc
+Replace Part IC1 LMR51430XFDDCR in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with LMR51430XFDDCR from INT-FINAL.IntLib
+Replace Part IC2 LMR51430XFDDCR in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with LMR51430XFDDCR from INT-FINAL.IntLib
+Update Managed Component J1 From CMP-02766-001735-1[TMM-103-01-L-S-SM] To CMP-02766-001735-1[TMM-103-01-L-S-SM] in Motorsteuerung_V5.SchDoc
+Replace Part J2 1711026 in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with 1711026 from INT-FINAL.IntLib
+Replace Part J3 1711026 in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with 1711026 from INT-FINAL.IntLib
+Replace Part J4 1725669 in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with 1725669 from INT-FINAL.IntLib
+Replace Part J5 1725669 in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with 1725669 from INT-FINAL.IntLib
+Replace Part J6 1725669 in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with 1725669 from INT-FINAL.IntLib
+Update Managed Component L1 From CMP-02424-000260-1[2.2uH] To CMP-02424-000260-1[IHLP2020BZER2R2M11] in Motorsteuerung_V5.SchDoc
+Replace Part L2 PA4340.332NLT in C:\Users\abdul\Desktop\Motorsteuerung V5\Motorsteuerung_V5.SchDoc with PA4340.332NLT from INT-FINAL.IntLib
+Update Managed Component P1 From CMP-03913-133967346-2[62701420621] To CMP-03913-133967346-2[62701420621] in Motorsteuerung_V5.SchDoc
+Update Managed Component R1 From CMP-03211-011351-1[100k] To CMP-03211-011351-1[RQ73C2A100KBTD] in Motorsteuerung_V5.SchDoc
+Update Managed Component R2 From CMP-2001-01692-2[22k1] To CMP-2001-01692-2[RT0805BRD0722K1L] in Motorsteuerung_V5.SchDoc
+Update Managed Component R3 From CMP-03412-049031-1[10k] To CMP-03412-049031-1[AT0805DRE0710KL] in Motorsteuerung_V5.SchDoc
+Update Managed Component R4 From CMP-03211-011351-1[100k] To CMP-03211-011351-1[RQ73C2A100KBTD] in Motorsteuerung_V5.SchDoc
+Update Managed Component R5 From CMP-03412-050024-1[1k] To CMP-03412-050024-1[AT0805BRE071KL] in Motorsteuerung_V5.SchDoc
+Update Managed Component R7 From CMP-03412-050024-1[1k] To CMP-03412-050024-1[AT0805BRE071KL] in Motorsteuerung_V5.SchDoc
+Update Managed Component R19 From CMP-03412-025952-1[13k7] To CMP-03412-025952-1[RT0805BRD0713K7L] in Motorsteuerung_V5.SchDoc
+Update Managed Component U1 From CMP-0304-00055-1[STM32F091CCT6] To CMP-0304-00055-1[STM32F091CCT6] in Motorsteuerung_V5.SchDoc

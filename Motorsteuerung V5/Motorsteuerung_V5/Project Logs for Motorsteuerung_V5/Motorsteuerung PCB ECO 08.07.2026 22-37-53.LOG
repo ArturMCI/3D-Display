@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=12V12 Pin=C14-1
+Removed Pin From Net: NetName=12V12 Pin=IC2-3
+Removed Pin From Net: NetName=12V12 Pin=IC2-5
+Added Pin To Net: NetName=12V Pin=C14-1
+Added Pin To Net: NetName=12V Pin=IC2-3
+Added Pin To Net: NetName=12V Pin=IC2-5
+Added Rule: Name=Schematic Supply Nets_2

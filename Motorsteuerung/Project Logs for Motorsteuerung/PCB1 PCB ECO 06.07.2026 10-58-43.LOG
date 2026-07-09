@@ -1,6 +1,0 @@
-Added Component: Designator=MH1(MTH)
-Added Component: Designator=MH2(MTH)
-Added Component: Designator=MH3(MTH)
-Added Component: Designator=MH4(MTH)
-Change Net Name : Old Net Name=ESC-GND OUT New Net Name=GND
-Added Rule: Name=Schematic Supply Nets_4
