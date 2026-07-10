@@ -1,32 +1,27 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 11:32:38 On 10.07.2026
+Start Output Generation At 11:50:10 On 10.07.2026
 
-Output: ODB++ Files
-Type  : ODB
+Output: Gerber X2 Files
+Type  : GerberX2
 From  : Variant [[No Variations]] of PCB Document [PCB_LED-Matrix.PcbDoc]
-   Generated File[profile]
-   Generated File[stephdr]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[tools]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[features]
-   Generated File[components]
-   Generated File[data]
-   Generated File[netlist]
-   Generated File[matrix]
+   Generated File[PCB_LED-Matrix_Copper_Signal_Top.gbr]
+   Generated File[PCB_LED-Matrix_Copper_Signal_Bot.gbr]
+   Generated File[PCB_LED-Matrix_Legend_Top.gbr]
+   Generated File[PCB_LED-Matrix_Legend_Bot.gbr]
+   Generated File[PCB_LED-Matrix_Soldermask_Top.gbr]
+   Generated File[PCB_LED-Matrix_Soldermask_Bot.gbr]
+   Generated File[PCB_LED-Matrix_Paste_Top.gbr]
+   Generated File[PCB_LED-Matrix_Paste_Bot.gbr]
+   Generated File[PCB_LED-Matrix_Mechanical_1.gbr]
+   Generated File[PCB_LED-Matrix_Profile.gbr]
+   Generated File[PCB_LED-Matrix_NPTH_Drill.gbr]
+   Generated File[PCB_LED-Matrix_PTH_Drill.gbr]
+   Generated File[PCB_LED-Matrix.EXTREP]
    Generated File[PCB_LED-Matrix.REP]
 
 
-Files Generated   : 19
+Files Generated   : 14
 Documents Printed : 0
 
-Finished Output Generation At 11:32:40 On 10.07.2026
+Finished Output Generation At 11:50:13 On 10.07.2026
