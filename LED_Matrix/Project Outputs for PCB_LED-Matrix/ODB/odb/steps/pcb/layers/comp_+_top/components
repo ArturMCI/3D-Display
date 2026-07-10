@@ -1,0 +1,1775 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+@2 .no_pop
+@3 .comp_ignore
+@4 .comp_variant_list
+@5 .placement_layer
+
+#
+#Component attribute text strings
+#
+&0 top-layer
+
+# CMP 0
+CMP 2 35.00000112 130.99999962 0 N MH3 MountingHole ;0=2,1=0.0000,5=0
+TOP 0 35.00000112 130.99999962 0 N 49 37 1
+#
+# CMP 1
+CMP 2 35.00000112 69.9999997 0 N MH2 MountingHole ;0=2,1=0.0000,5=0
+TOP 0 35.00000112 69.9999997 0 N 49 32 1
+#
+# CMP 2
+CMP 2 35.07124304 100.13537504 0 N MH1 MountingHole ;0=2,1=0.0000,5=0
+TOP 0 35.07124304 100.13537504 0 N 49 33 1
+#
+# CMP 3
+CMP 3 17.99999956 88.5000008 90 N J1 TB0011-350-08BE ;0=2,1=0.0000,5=0
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.sameskydevices.com/product/resource/tb0011-350.pdf'
+PRP Height '8.5mm'
+PRP Manufacturer_Name 'Same Sky'
+PRP Manufacturer_Part_Number 'TB0011-350-08BE'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 17.99999956 88.5000008 90 N 49 34 1
+TOP 1 17.99999956 92.00000142 90 N 50 33 2
+TOP 2 17.99999956 95.50000204 90 N 1 0 3
+TOP 3 17.99999956 99.00000012 90 N 2 0 4
+TOP 4 17.99999956 102.50000074 90 N 3 0 5
+TOP 5 17.99999956 106.00000136 90 N 4 0 6
+TOP 6 17.99999956 109.50000198 90 N 5 0 7
+TOP 7 17.99999956 113.00000006 90 N 6 0 8
+#
+# CMP 4
+CMP 1 137.00000032 67.00000062 180 N C48 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 67.00000062 90 N 50 65 1
+TOP 1 135.99999978 67.00000062 90 N 49 68 2
+#
+# CMP 5
+CMP 1 124.99999892 67.00000062 180 N C47 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 67.00000062 90 N 50 20 1
+TOP 1 123.99999838 67.00000062 90 N 49 24 2
+#
+# CMP 6
+CMP 1 113.00000006 67.00000062 180 N C46 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 114.0000006 67.00000062 90 N 50 23 1
+TOP 1 111.99999952 67.00000062 90 N 49 15 2
+#
+# CMP 7
+CMP 1 101.0000012 67.00000062 180 N C45 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 67.00000062 90 N 50 16 1
+TOP 1 100.00000066 67.00000062 90 N 49 84 2
+#
+# CMP 8
+CMP 1 88.9999998 67.00000062 180 N C44 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 67.00000062 90 N 50 55 1
+TOP 1 87.99999926 67.00000062 90 N 49 62 2
+#
+# CMP 9
+CMP 1 77.00000094 67.00000062 180 N C43 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 78.00000148 67.00000062 90 N 50 24 1
+TOP 1 76.0000004 67.00000062 90 N 49 22 2
+#
+# CMP 10
+CMP 1 64.99999954 67.00000062 180 N C42 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 66.00000008 67.00000062 90 N 50 49 1
+TOP 1 63.999999 67.00000062 90 N 49 56 2
+#
+# CMP 11
+CMP 1 53.00001084 67.00000062 180 N C41 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.00001138 67.00000062 90 N 50 19 1
+TOP 1 52.0000103 67.00000062 90 N 49 23 2
+#
+# CMP 12
+CMP 1 137.00000032 78.99999948 180 N C40 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 78.99999948 90 N 50 73 1
+TOP 1 135.99999978 78.99999948 90 N 49 59 2
+#
+# CMP 13
+CMP 1 124.99999892 78.99999948 180 N C39 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 78.99999948 90 N 50 11 1
+TOP 1 123.99999838 78.99999948 90 N 49 3 2
+#
+# CMP 14
+CMP 1 113.00000006 78.99999948 180 N C38 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 114.0000006 78.99999948 90 N 50 57 1
+TOP 1 111.99999952 78.99999948 90 N 49 58 2
+#
+# CMP 15
+CMP 1 101.0000012 78.99999948 180 N C37 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 78.99999948 90 N 50 10 1
+TOP 1 100.00000066 78.99999948 90 N 49 2 2
+#
+# CMP 16
+CMP 1 88.9999998 78.99999948 180 N C36 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 78.99999948 90 N 50 90 1
+TOP 1 87.99999926 78.99999948 90 N 49 93 2
+#
+# CMP 17
+CMP 1 77.00000094 78.99999948 180 N C35 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 78.00000148 78.99999948 90 N 50 7 1
+TOP 1 76.0000004 78.99999948 90 N 49 11 2
+#
+# CMP 18
+CMP 1 64.99999192 78.99999948 180 N C34 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 65.99999246 78.99999948 90 N 50 89 1
+TOP 1 63.99999138 78.99999948 90 N 49 92 2
+#
+# CMP 19
+CMP 1 53.00000068 79.00000202 180 N C33 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.00000122 79.00000202 90 N 50 12 1
+TOP 1 52.00000014 79.00000202 90 N 49 10 2
+#
+# CMP 20
+CMP 1 137.00000032 91.00000088 180 N C32 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 91.00000088 90 N 50 5 1
+TOP 1 135.99999978 91.00000088 90 N 49 21 2
+#
+# CMP 21
+CMP 1 124.99999892 91.00000088 180 N C31 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 91.00000088 90 N 50 41 1
+TOP 1 123.99999838 91.00000088 90 N 49 9 2
+#
+# CMP 22
+CMP 1 113.00000006 91.00000088 180 N C30 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 114.0000006 91.00000088 90 N 50 87 1
+TOP 1 111.99999952 91.00000088 90 N 49 90 2
+#
+# CMP 23
+CMP 1 101.0000012 91.00000088 180 N C29 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 91.00000088 90 N 50 40 1
+TOP 1 100.00000066 91.00000088 90 N 49 8 2
+#
+# CMP 24
+CMP 1 88.9999998 91.00000088 180 N C28 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 91.00000088 90 N 50 97 1
+TOP 1 87.99999926 91.00000088 90 N 49 100 2
+#
+# CMP 25
+CMP 1 77.00000094 91.00000088 180 N C27 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 78.00000148 91.00000088 90 N 50 9 1
+TOP 1 76.0000004 91.00000088 90 N 49 7 2
+#
+# CMP 26
+CMP 1 64.99999192 91.00001104 180 N C26 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 65.99999246 91.00001104 90 N 50 88 1
+TOP 1 63.99999138 91.00001104 90 N 49 91 2
+#
+# CMP 27
+CMP 1 53.00000576 91.00000088 180 N C25 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.0000063 91.00000088 90 N 50 42 1
+TOP 1 52.00000522 91.00000088 90 N 49 25 2
+#
+# CMP 28
+CMP 1 137.00000032 102.99999974 180 N C24 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 102.99999974 90 N 50 77 1
+TOP 1 135.99999978 102.99999974 90 N 49 88 2
+#
+# CMP 29
+CMP 1 124.99999892 102.99999974 180 N C23 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 102.99999974 90 N 50 45 1
+TOP 1 123.99999838 102.99999974 90 N 49 49 2
+#
+# CMP 30
+CMP 1 113.00000006 102.99999974 180 N C22 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 114.0000006 102.99999974 90 N 50 93 1
+TOP 1 111.99999952 102.99999974 90 N 49 96 2
+#
+# CMP 31
+CMP 1 101.0000012 102.99999974 180 N C21 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 102.99999974 90 N 50 48 1
+TOP 1 100.00000066 102.99999974 90 N 49 40 2
+#
+# CMP 32
+CMP 1 88.9999998 102.99999974 180 N C20 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 102.99999974 90 N 50 78 1
+TOP 1 87.99999926 102.99999974 90 N 49 79 2
+#
+# CMP 33
+CMP 1 77.00000094 102.99999974 180 N C19 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 78.00000148 102.99999974 90 N 50 43 1
+TOP 1 76.0000004 102.99999974 90 N 49 47 2
+#
+# CMP 34
+CMP 1 65.00000208 103.00000736 180 N C18 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 66.00000262 103.00000736 90 N 50 94 1
+TOP 1 64.00000154 103.00000736 90 N 49 97 2
+#
+# CMP 35
+CMP 1 53.00000068 102.99999974 180 N C17 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.00000122 102.99999974 90 N 50 44 1
+TOP 1 52.00000014 102.99999974 90 N 49 48 2
+#
+# CMP 36
+CMP 1 137.00000032 115.00000114 180 N C16 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 115.00000114 90 N 50 76 1
+TOP 1 135.99999978 115.00000114 90 N 49 77 2
+#
+# CMP 37
+CMP 1 124.99999892 115.00000114 180 N C15 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 115.00000114 90 N 50 30 1
+TOP 1 123.99999838 115.00000114 90 N 49 46 2
+#
+# CMP 38
+CMP 1 113.00000006 115.00000114 180 N C14 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 114.0000006 115.00000114 90 N 50 74 1
+TOP 1 111.99999952 115.00000114 90 N 49 81 2
+#
+# CMP 39
+CMP 1 101.0000012 115.00000114 180 N C13 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 115.00000114 90 N 50 25 1
+TOP 1 100.00000066 115.00000114 90 N 49 29 2
+#
+# CMP 40
+CMP 1 88.9999998 115.00000114 180 N C12 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 115.00000114 90 N 50 83 1
+TOP 1 87.99999926 115.00000114 90 N 49 78 2
+#
+# CMP 41
+CMP 1 77.00000094 115.00000114 180 N C11 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 78.00000148 115.00000114 90 N 50 29 1
+TOP 1 76.0000004 115.00000114 90 N 49 45 2
+#
+# CMP 42
+CMP 1 64.999997 115.00000368 180 N C10 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 65.99999754 115.00000368 90 N 50 75 1
+TOP 1 63.99999646 115.00000368 90 N 49 76 2
+#
+# CMP 43
+CMP 1 53.00000068 115.00000114 180 N C9 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.00000122 115.00000114 90 N 50 63 1
+TOP 1 52.00000014 115.00000114 90 N 49 66 2
+#
+# CMP 44
+CMP 1 137.00000032 127 180 N C8 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 138.00000086 127 90 N 50 85 1
+TOP 1 135.99999978 127 90 N 49 86 2
+#
+# CMP 45
+CMP 1 124.99999892 127 180 N C7 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 125.99999946 127 90 N 50 34 1
+TOP 1 123.99999838 127 90 N 49 26 2
+#
+# CMP 46
+CMP 1 112.99999752 126.99997968 180 N C6 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 113.99999806 126.99997968 90 N 50 80 1
+TOP 1 111.99999698 126.99997968 90 N 49 87 2
+#
+# CMP 47
+CMP 1 101.0000012 126.99997968 180 N C5 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 102.00000174 126.99997968 90 N 50 31 1
+TOP 1 100.00000066 126.99997968 90 N 49 35 2
+#
+# CMP 48
+CMP 1 88.9999998 127 180 N C4 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 90.00000034 127 90 N 50 82 1
+TOP 1 87.99999926 127 90 N 49 83 2
+#
+# CMP 49
+CMP 1 76.9999984 126.99998984 180 N C3 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 77.99999894 126.99998984 90 N 50 36 1
+TOP 1 75.99999786 126.99998984 90 N 49 28 2
+#
+# CMP 50
+CMP 1 65.00000208 126.99998984 180 N C2 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 66.00000262 126.99998984 90 N 50 81 1
+TOP 1 64.00000154 126.99998984 90 N 49 82 2
+#
+# CMP 51
+CMP 1 53.00000068 126.99998984 180 N C1 100nF ;0=1,1=1.0000,5=0
+PRP Case-EIA '0805'
+PRP Case-Metric '2012'
+PRP Max_Thickness '1 mm'
+PRP Rated_Voltage '10 V'
+PRP Technology 'SMT'
+PRP Tolerance '±5%'
+PRP Value '100nF'
+TOP 0 54.00000122 126.99998984 90 N 50 35 1
+TOP 1 52.00000014 126.99998984 90 N 49 27 2
+#
+# CMP 52
+CMP 0 137.00000032 72.00000078 180 N 48 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 70.35000154 180 N 50 64 1
+TOP 1 139.4500005 73.65000002 180 N 0 3 2
+TOP 2 134.55000014 73.65000002 180 N 49 67 3
+TOP 3 134.55000014 70.35000154 180 N 7 1 4
+#
+# CMP 53
+CMP 0 124.99999892 72.00000078 180 N 47 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.4499991 70.35000154 180 N 50 67 1
+TOP 1 127.4499991 73.65000002 180 N 7 0 2
+TOP 2 122.54999874 73.65000002 180 N 49 70 3
+TOP 3 122.54999874 70.35000154 180 N 8 0 4
+#
+# CMP 54
+CMP 0 112.99999752 72.00000332 180 N 46 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.4499977 70.35000408 180 N 50 72 1
+TOP 1 115.4499977 73.65000256 180 N 8 1 2
+TOP 2 110.54999734 73.65000256 180 N 49 75 3
+TOP 3 110.54999734 70.35000408 180 N 9 1 4
+#
+# CMP 55
+CMP 0 101.0000012 72.00000332 180 N 45 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 70.35000408 180 N 50 3 1
+TOP 1 103.45000138 73.65000256 180 N 9 0 2
+TOP 2 98.55000102 73.65000256 180 N 49 1 3
+TOP 3 98.55000102 70.35000408 180 N 10 0 4
+#
+# CMP 56
+CMP 0 88.99999472 72.00000332 180 N 44 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.4499949 70.35000408 180 N 50 21 1
+TOP 1 91.4499949 73.65000256 180 N 10 1 2
+TOP 2 86.54999454 73.65000256 180 N 49 19 3
+TOP 3 86.54999454 70.35000408 180 N 11 0 4
+#
+# CMP 57
+CMP 0 76.9999984 72.00000332 180 N 43 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.44999858 70.35000408 180 N 50 17 1
+TOP 1 79.44999858 73.65000256 180 N 11 1 2
+TOP 2 74.54999822 73.65000256 180 N 49 50 3
+TOP 3 74.54999822 70.35000408 180 N 12 0 4
+#
+# CMP 58
+CMP 0 65.00000208 72.00000332 180 N 42 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.45000226 70.35000408 180 N 50 61 1
+TOP 1 67.45000226 73.65000256 180 N 12 1 2
+TOP 2 62.5500019 73.65000256 180 N 49 64 3
+TOP 3 62.5500019 70.35000408 180 N 13 1 4
+#
+# CMP 59
+CMP 0 53.00000068 72.00000078 180 N 41 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 70.35000154 180 N 50 56 1
+TOP 1 55.45000086 73.65000002 180 N 13 0 2
+TOP 2 50.5500005 73.65000002 180 N 49 57 3
+TOP 3 50.5500005 70.35000154 180 N 1 1 4
+#
+# CMP 60
+CMP 0 137.00000032 83.99999964 180 N 40 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 82.3500004 180 N 50 50 1
+TOP 1 139.4500005 85.64999888 180 N 0 4 2
+TOP 2 134.55000014 85.64999888 180 N 49 51 3
+TOP 3 134.55000014 82.3500004 180 N 14 0 4
+#
+# CMP 61
+CMP 0 124.99999892 83.99999964 180 N 39 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.4499991 82.3500004 180 N 50 68 1
+TOP 1 127.4499991 85.64999888 180 N 14 1 2
+TOP 2 122.54999874 85.64999888 180 N 49 71 3
+TOP 3 122.54999874 82.3500004 180 N 15 1 4
+#
+# CMP 62
+CMP 0 112.99999752 83.99999964 180 N 38 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.4499977 82.3500004 180 N 50 8 1
+TOP 1 115.4499977 85.64999888 180 N 15 0 2
+TOP 2 110.54999734 85.64999888 180 N 49 12 3
+TOP 3 110.54999734 82.3500004 180 N 16 0 4
+#
+# CMP 63
+CMP 0 101.0000012 83.99999964 180 N 37 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 82.3500004 180 N 50 66 1
+TOP 1 103.45000138 85.64999888 180 N 16 1 2
+TOP 2 98.55000102 85.64999888 180 N 49 69 3
+TOP 3 98.55000102 82.3500004 180 N 17 1 4
+#
+# CMP 64
+CMP 0 88.99999472 84.00000472 180 N 36 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.4499949 82.35000548 180 N 50 4 1
+TOP 1 91.4499949 85.65000396 180 N 17 0 2
+TOP 2 86.54999454 85.65000396 180 N 49 20 3
+TOP 3 86.54999454 82.35000548 180 N 18 0 4
+#
+# CMP 65
+CMP 0 76.9999984 83.99999964 180 N 35 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.44999858 82.3500004 180 N 50 18 1
+TOP 1 79.44999858 85.64999888 180 N 18 1 2
+TOP 2 74.54999822 85.64999888 180 N 49 16 3
+TOP 3 74.54999822 82.3500004 180 N 19 0 4
+#
+# CMP 66
+CMP 0 65.00000208 84.00000472 180 N 34 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.45000226 82.35000548 180 N 50 91 1
+TOP 1 67.45000226 85.65000396 180 N 19 1 2
+TOP 2 62.5500019 85.65000396 180 N 49 94 3
+TOP 3 62.5500019 82.35000548 180 N 20 1 4
+#
+# CMP 67
+CMP 0 53.00000068 84.00000218 180 N 33 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 82.35000294 180 N 50 86 1
+TOP 1 55.45000086 85.65000142 180 N 20 0 2
+TOP 2 50.5500005 85.65000142 180 N 49 89 3
+TOP 3 50.5500005 82.35000294 180 N 2 1 4
+#
+# CMP 68
+CMP 0 137.00000032 95.99997056 180 N 32 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 94.34997132 180 N 50 51 1
+TOP 1 139.4500005 97.6499698 180 N 0 5 2
+TOP 2 134.55000014 97.6499698 180 N 49 52 3
+TOP 3 134.55000014 94.34997132 180 N 21 0 4
+#
+# CMP 69
+CMP 0 125.000004 95.99998072 180 N 31 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.45000418 94.34998148 180 N 50 69 1
+TOP 1 127.45000418 97.64997996 180 N 21 1 2
+TOP 2 122.55000382 97.64997996 180 N 49 72 3
+TOP 3 122.55000382 94.34998148 180 N 22 1 4
+#
+# CMP 70
+CMP 0 112.99999752 95.99999088 180 N 30 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.4499977 94.34999164 180 N 50 38 1
+TOP 1 115.4499977 97.64999012 180 N 22 0 2
+TOP 2 110.54999734 97.64999012 180 N 49 42 3
+TOP 3 110.54999734 94.34999164 180 N 23 0 4
+#
+# CMP 71
+CMP 0 101.0000012 96.0000112 180 N 29 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 94.35001196 180 N 50 37 1
+TOP 1 103.45000138 97.65001044 180 N 23 1 2
+TOP 2 98.55000102 97.65001044 180 N 49 41 3
+TOP 3 98.55000102 94.35001196 180 N 24 0 4
+#
+# CMP 72
+CMP 0 88.99999472 96.00000104 180 N 28 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.4499949 94.3500018 180 N 50 6 1
+TOP 1 91.4499949 97.65000028 180 N 24 1 2
+TOP 2 86.54999454 97.65000028 180 N 49 4 3
+TOP 3 86.54999454 94.3500018 180 N 25 0 4
+#
+# CMP 73
+CMP 0 77.00000348 96.00000104 180 N 27 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.45000366 94.3500018 180 N 50 13 1
+TOP 1 79.45000366 97.65000028 180 N 25 1 2
+TOP 2 74.5500033 97.65000028 180 N 49 17 3
+TOP 3 74.5500033 94.3500018 180 N 26 0 4
+#
+# CMP 74
+CMP 0 65.00000208 96.00000104 180 N 26 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.45000226 94.3500018 180 N 50 92 1
+TOP 1 67.45000226 97.65000028 180 N 26 1 2
+TOP 2 62.5500019 97.65000028 180 N 49 95 3
+TOP 3 62.5500019 94.3500018 180 N 27 0 4
+#
+# CMP 75
+CMP 0 53.00000068 96.00000104 180 N 25 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 94.3500018 180 N 50 70 1
+TOP 1 55.45000086 97.65000028 180 N 27 1 2
+TOP 2 50.5500005 97.65000028 180 N 49 73 3
+TOP 3 50.5500005 94.3500018 180 N 3 1 4
+#
+# CMP 76
+CMP 0 137.00000032 108.00001768 180 N 24 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 106.35001844 180 N 50 58 1
+TOP 1 139.4500005 109.65001692 180 N 0 0 2
+TOP 2 134.55000014 109.65001692 180 N 49 53 3
+TOP 3 134.55000014 106.35001844 180 N 28 0 4
+#
+# CMP 77
+CMP 0 125.000004 108.00002784 180 N 23 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.45000418 106.3500286 180 N 50 52 1
+TOP 1 127.45000418 109.65002708 180 N 28 1 2
+TOP 2 122.55000382 109.65002708 180 N 49 63 3
+TOP 3 122.55000382 106.3500286 180 N 29 1 4
+#
+# CMP 78
+CMP 0 112.99999752 108.00002784 180 N 22 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.4499977 106.3500286 180 N 50 28 1
+TOP 1 115.4499977 109.65002708 180 N 29 0 2
+TOP 2 110.54999734 109.65002708 180 N 49 44 3
+TOP 3 110.54999734 106.3500286 180 N 30 0 4
+#
+# CMP 79
+CMP 0 101.0000012 108.000038 180 N 21 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 106.35003876 180 N 50 39 1
+TOP 1 103.45000138 109.65003724 180 N 30 1 2
+TOP 2 98.55000102 109.65003724 180 N 49 43 3
+TOP 3 98.55000102 106.35003876 180 N 31 0 4
+#
+# CMP 80
+CMP 0 88.99999472 108.00002784 180 N 20 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.4499949 106.3500286 180 N 50 1 1
+TOP 1 91.4499949 109.65002708 180 N 31 1 2
+TOP 2 86.54999454 109.65002708 180 N 49 5 3
+TOP 3 86.54999454 106.3500286 180 N 32 0 4
+#
+# CMP 81
+CMP 0 77.00000348 108.00002784 180 N 19 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.45000366 106.3500286 180 N 50 14 1
+TOP 1 79.45000366 109.65002708 180 N 32 1 2
+TOP 2 74.5500033 109.65002708 180 N 49 18 3
+TOP 3 74.5500033 106.3500286 180 N 33 0 4
+#
+# CMP 82
+CMP 0 65.00000208 108.00001768 180 N 18 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.45000226 106.35001844 180 N 50 79 1
+TOP 1 67.45000226 109.65001692 180 N 33 1 2
+TOP 2 62.5500019 109.65001692 180 N 49 80 3
+TOP 3 62.5500019 106.35001844 180 N 34 0 4
+#
+# CMP 83
+CMP 0 53.00000068 107.9999999 180 N 17 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 106.35000066 180 N 50 71 1
+TOP 1 55.45000086 109.64999914 180 N 34 1 2
+TOP 2 50.5500005 109.64999914 180 N 49 74 3
+TOP 3 50.5500005 106.35000066 180 N 4 1 4
+#
+# CMP 84
+CMP 0 137.00000032 120.00000384 180 N 16 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 118.3500046 180 N 50 27 1
+TOP 1 139.4500005 121.65000308 180 N 0 2 2
+TOP 2 134.55000014 121.65000308 180 N 49 31 3
+TOP 3 134.55000014 118.3500046 180 N 35 0 4
+#
+# CMP 85
+CMP 0 125.000004 120.000014 180 N 15 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.45000418 118.35001476 180 N 50 53 1
+TOP 1 127.45000418 121.65001324 180 N 35 1 2
+TOP 2 122.55000382 121.65001324 180 N 49 54 3
+TOP 3 122.55000382 118.35001476 180 N 36 1 4
+#
+# CMP 86
+CMP 0 112.99999752 120.000014 180 N 14 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.4499977 118.35001476 180 N 50 15 1
+TOP 1 115.4499977 121.65001324 180 N 36 0 2
+TOP 2 110.54999734 121.65001324 180 N 49 13 3
+TOP 3 110.54999734 118.35001476 180 N 37 0 4
+#
+# CMP 87
+CMP 0 101.0000012 120.00000384 180 N 13 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 118.3500046 180 N 50 84 1
+TOP 1 103.45000138 121.65000308 180 N 37 1 2
+TOP 2 98.55000102 121.65000308 180 N 49 85 3
+TOP 3 98.55000102 118.3500046 180 N 38 0 4
+#
+# CMP 88
+CMP 0 88.99999472 119.99999368 180 N 12 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.4499949 118.34999444 180 N 50 95 1
+TOP 1 91.4499949 121.64999292 180 N 38 1 2
+TOP 2 86.54999454 121.64999292 180 N 49 98 3
+TOP 3 86.54999454 118.34999444 180 N 39 0 4
+#
+# CMP 89
+CMP 0 76.9999984 119.99998352 180 N 11 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.44999858 118.34998428 180 N 50 59 1
+TOP 1 79.44999858 121.64998276 180 N 39 1 2
+TOP 2 74.54999822 121.64998276 180 N 49 60 3
+TOP 3 74.54999822 118.34998428 180 N 40 0 4
+#
+# CMP 90
+CMP 0 64.99999954 119.99999368 180 N 10 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.44999972 118.34999444 180 N 50 62 1
+TOP 1 67.44999972 121.64999292 180 N 40 1 2
+TOP 2 62.54999936 121.64999292 180 N 49 65 3
+TOP 3 62.54999936 118.34999444 180 N 41 1 4
+#
+# CMP 91
+CMP 0 53.00000068 120.0000013 180 N 9 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 118.35000206 180 N 50 26 1
+TOP 1 55.45000086 121.65000054 180 N 41 0 2
+TOP 2 50.5500005 121.65000054 180 N 49 30 3
+TOP 3 50.5500005 118.35000206 180 N 5 1 4
+#
+# CMP 92
+CMP 0 137.00000032 132.00000016 180 N 8 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 139.4500005 130.35000092 180 N 50 46 1
+TOP 1 139.4500005 133.6499994 180 N 0 1 2
+TOP 2 134.55000014 133.6499994 180 N 49 38 3
+TOP 3 134.55000014 130.35000092 180 N 42 0 4
+#
+# CMP 93
+CMP 0 124.99999892 132.00001032 180 N 7 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 127.4499991 130.35001108 180 N 50 96 1
+TOP 1 127.4499991 133.65000956 180 N 42 1 2
+TOP 2 122.54999874 133.65000956 180 N 49 99 3
+TOP 3 122.54999874 130.35001108 180 N 43 0 4
+#
+# CMP 94
+CMP 0 113.00000006 132.00001032 180 N 6 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 115.45000024 130.35001108 180 N 50 60 1
+TOP 1 115.45000024 133.65000956 180 N 43 1 2
+TOP 2 110.54999988 133.65000956 180 N 49 61 3
+TOP 3 110.54999988 130.35001108 180 N 44 0 4
+#
+# CMP 95
+CMP 0 101.0000012 131.99999 180 N 5 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 103.45000138 130.34999076 180 N 50 54 1
+TOP 1 103.45000138 133.64998924 180 N 44 1 2
+TOP 2 98.55000102 133.64998924 180 N 49 55 3
+TOP 3 98.55000102 130.34999076 180 N 45 1 4
+#
+# CMP 96
+CMP 0 88.9999998 132.00000016 180 N 4 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 91.44999998 130.35000092 180 N 50 32 1
+TOP 1 91.44999998 133.6499994 180 N 45 0 2
+TOP 2 86.54999962 133.6499994 180 N 49 36 3
+TOP 3 86.54999962 130.35000092 180 N 46 0 4
+#
+# CMP 97
+CMP 0 77.00000094 132.00000016 180 N 3 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 79.45000112 130.35000092 180 N 50 47 1
+TOP 1 79.45000112 133.6499994 180 N 46 1 2
+TOP 2 74.55000076 133.6499994 180 N 49 39 3
+TOP 3 74.55000076 130.35000092 180 N 47 0 4
+#
+# CMP 98
+CMP 0 64.99999954 131.99999 180 N 2 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 67.44999972 130.34999076 180 N 50 2 1
+TOP 1 67.44999972 133.64998924 180 N 47 1 2
+TOP 2 62.54999936 133.64998924 180 N 49 6 3
+TOP 3 62.54999936 130.34999076 180 N 48 0 4
+#
+# CMP 99
+CMP 0 53.00000068 132.00000016 180 N 1 1655 ;0=1,1=0.0000,5=0
+PRP Category 'Optoelectronics'
+PRP Color 'Red,Green,Blue(RGB)'
+PRP Configuration 'Discrete'
+PRP Controller_Type '-'
+PRP Datasheet_URL 'http://datasheet.octopart.com/ADA1655-Adafruit-Industries-datasheet-32028139.pdf'
+PRP Datasheet_Version 'May-13'
+PRP Family 'Addressable,Specialty'
+PRP Interface '-'
+PRP Manufacturer 'Adafruit-Industries-LLC'
+PRP Manufacturer_URL 'https://www.adafruit.com/'
+PRP Mounting_Type 'SurfaceMount'
+PRP Number_of_LEDs '10'
+PRP Package_Description '4-Pin Surface Mount Device, Body 5 x 5 mm'
+PRP Package_Reference '1655'
+PRP Series 'Neopixel'
+PRP Size_/_Dimension '5.00mmLx5.00mmW'
+PRP Utilized_LED 'WS2812(5050)'
+TOP 0 55.45000086 130.35000092 180 N 50 22 1
+TOP 1 55.45000086 133.6499994 180 N 48 1 2
+TOP 2 50.5500005 133.6499994 180 N 49 14 3
+TOP 3 50.5500005 130.35000092 180 N 6 1 4
+#
