@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=Matrix2_1 Pin=U1-32
+Removed Pin From Net: NetName=Matrix2_2 Pin=U1-33
+Removed Pin From Net: NetName=Matrix2_3 Pin=U1-41
+Removed Pin From Net: NetName=Matrix2_4 Pin=U1-42
+Removed Pin From Net: NetName=Matrix2_5 Pin=U1-43
+Removed Pin From Net: NetName=Matrix2_6 Pin=U1-44
+Added Pin To Net: NetName=Matrix2_6 Pin=U1-32
+Added Pin To Net: NetName=Matrix2_5 Pin=U1-33
+Added Pin To Net: NetName=Matrix2_4 Pin=U1-41
+Added Pin To Net: NetName=Matrix2_3 Pin=U1-42
+Added Pin To Net: NetName=Matrix2_2 Pin=U1-43
+Added Pin To Net: NetName=Matrix2_1 Pin=U1-44

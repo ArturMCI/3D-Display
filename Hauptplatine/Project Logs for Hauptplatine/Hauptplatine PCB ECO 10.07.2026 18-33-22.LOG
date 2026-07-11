@@ -1,0 +1,13 @@
+Added Component: Designator=R30(RESC2013X60X35NL10T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0805JR-134K7L"; VariantName = "[No Variations]"
+Added Component: Designator=R31(RESC2013X60X35NL10T20)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0805JR-134K7L"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBOT Pin=IC4-25
+Added Pin To Net: NetName=BMS_SCL Pin=R30-1
+Added Pin To Net: NetName=3V3 Pin=R30-2
+Added Pin To Net: NetName=BMS_SDA Pin=R31-1
+Added Pin To Net: NetName=3V3 Pin=R31-2
+Added Member To Class: ClassName=Battery-Management Member=Component R30 4K7
+Added Member To Class: ClassName=Battery-Management Member=Component R31 4K7
