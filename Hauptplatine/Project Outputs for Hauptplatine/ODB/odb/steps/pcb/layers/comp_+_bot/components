@@ -1,0 +1,203 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+@2 .no_pop
+@3 .comp_ignore
+@4 .comp_variant_list
+@5 .placement_layer
+
+#
+#Component attribute text strings
+#
+&0 bottom_layer
+
+# CMP 0
+CMP 5 108.46702462 108.21302462 225 N R22 103AT-2 ;0=2,1=0.0000,5=0
+PRP Height '2.4mm'
+PRP Lead_Pitch '2.54mm'
+PRP Length '17mm'
+PRP Max_Operating_Temperature '110°C'
+PRP Min_Operating_Temperature '-50°C'
+PRP Number_of_Pins '2'
+PRP Packaging 'Bulk'
+PRP Resistance '10kR'
+PRP RoHS_Compliant 'Yes'
+PRP Series 'AT'
+PRP Termination 'Radial'
+PRP Tolerance '1%'
+PRP Width '3.7mm'
+TOP 0 107.569 107.315 315 N 8 1 1
+TOP 1 109.36504924 109.11104924 315 N 83 27 2
+#
+# CMP 1
+CMP 30 95.631 67.40299956 270 N R6 4K7 ;0=1,1=0.0000,5=0
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Digikey_Description 'RES SMD 47K OHM 1% 1/8W 0805'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRD0747KL'
+PRP Octopart 'https://octopart.com/rt0805frd0747kl-yageo-71400071'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance '47KO'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '25 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '47KO'
+PRP Voltage_Rating '150V'
+TOP 0 95.631 66.35299912 270 N 92 11 1
+TOP 1 95.631 68.453 270 N 62 0 2
+#
+# CMP 2
+CMP 33 82.14247986 91.19530656 225 N P5 S2B-PH-K-S(LF)(SN) ;0=2,1=4.8000,5=0
+PRP Capacitance '10 uF'
+PRP Case\Package 'Radial'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'http://www.jst-mfg.com/product/pdf/eng/ePH.pdf'
+PRP DatasheetVersion 'Dec-12'
+PRP Diameter '5 mm'
+PRP Height '11 mm'
+PRP Lead_Pitch '2 mm'
+PRP Length '11 mm'
+PRP Max_Operating_Temperature '85 degC'
+PRP Min_Operating_Temperature '-40 degC'
+PRP Mount 'Through Hole'
+PRP Package_Quantity '200'
+PRP PackageDescription 'Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm'
+PRP PackageReference 'S2B-PH-K-S'
+PRP Packaging 'Bulk'
+PRP Pins '2'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP RoHSCompliant 'true'
+PRP Tolerance '20%'
+PRP Voltage_Rating '50 V'
+PRP Voltage_Rating_(DC) '50 V'
+TOP 0 83.16778642 88.75578642 315 N 6 6 1
+TOP 1 84.582 90.17 315 N 4 7 2
+#
+# CMP 3
+CMP 33 82.14247986 70.09469344 315 N P4 S2B-PH-K-S(LF)(SN) ;0=2,1=4.8000,5=0
+PRP Capacitance '10 uF'
+PRP Case\Package 'Radial'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'http://www.jst-mfg.com/product/pdf/eng/ePH.pdf'
+PRP DatasheetVersion 'Dec-12'
+PRP Diameter '5 mm'
+PRP Height '11 mm'
+PRP Lead_Pitch '2 mm'
+PRP Length '11 mm'
+PRP Max_Operating_Temperature '85 degC'
+PRP Min_Operating_Temperature '-40 degC'
+PRP Mount 'Through Hole'
+PRP Package_Quantity '200'
+PRP PackageDescription 'Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm'
+PRP PackageReference 'S2B-PH-K-S'
+PRP Packaging 'Bulk'
+PRP Pins '2'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP RoHSCompliant 'true'
+PRP Tolerance '20%'
+PRP Voltage_Rating '50 V'
+PRP Voltage_Rating_(DC) '50 V'
+TOP 0 84.582 71.12 225 N 6 5 1
+TOP 1 83.16778642 72.53421358 225 N 4 11 2
+#
+# CMP 4
+CMP 33 103.26030656 70.07747986 45 N P3 S2B-PH-K-S(LF)(SN) ;0=2,1=4.8000,5=0
+PRP Capacitance '10 uF'
+PRP Case\Package 'Radial'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'http://www.jst-mfg.com/product/pdf/eng/ePH.pdf'
+PRP DatasheetVersion 'Dec-12'
+PRP Diameter '5 mm'
+PRP Height '11 mm'
+PRP Lead_Pitch '2 mm'
+PRP Length '11 mm'
+PRP Max_Operating_Temperature '85 degC'
+PRP Min_Operating_Temperature '-40 degC'
+PRP Mount 'Through Hole'
+PRP Package_Quantity '200'
+PRP PackageDescription 'Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm'
+PRP PackageReference 'S2B-PH-K-S'
+PRP Packaging 'Bulk'
+PRP Pins '2'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP RoHSCompliant 'true'
+PRP Tolerance '20%'
+PRP Voltage_Rating '50 V'
+PRP Voltage_Rating_(DC) '50 V'
+TOP 0 102.235 72.517 135 N 4 10 1
+TOP 1 100.82078642 71.10278642 135 N 1 8 2
+#
+# CMP 5
+CMP 33 103.26030656 91.21252014 135 N P2 S2B-PH-K-S(LF)(SN) ;0=2,1=4.8000,5=0
+PRP Capacitance '10 uF'
+PRP Case\Package 'Radial'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'http://www.jst-mfg.com/product/pdf/eng/ePH.pdf'
+PRP DatasheetVersion 'Dec-12'
+PRP Diameter '5 mm'
+PRP Height '11 mm'
+PRP Lead_Pitch '2 mm'
+PRP Length '11 mm'
+PRP Max_Operating_Temperature '85 degC'
+PRP Min_Operating_Temperature '-40 degC'
+PRP Mount 'Through Hole'
+PRP Package_Quantity '200'
+PRP PackageDescription 'Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm'
+PRP PackageReference 'S2B-PH-K-S'
+PRP Packaging 'Bulk'
+PRP Pins '2'
+PRP Radiation_Hardening 'No'
+PRP REACH_SVHC 'No SVHC'
+PRP RoHSCompliant 'true'
+PRP Tolerance '20%'
+PRP Voltage_Rating '50 V'
+PRP Voltage_Rating_(DC) '50 V'
+TOP 0 100.82078642 90.18721358 45 N 4 9 1
+TOP 1 102.235 88.773 45 N 1 9 2
+#
+# CMP 6
+CMP 3 90.551 67.78099982 270 N C13 100nF ;0=1,1=1.4500,5=0
+PRP Manufacturer 'Vitramon'
+PRP Part_Number 'VJ0805Y104JXXPW1BC'
+TOP 0 90.551 67.056 0 N 83 32 1
+TOP 1 90.551 68.50599964 0 N 92 12 2
+#
+# CMP 7
+CMP 42 93.0950005 66.167 270 N B1 TMAG5170A2EDGKRQ1 ;0=1,1=0.0000,5=0
+PRP Datasheet_Link 'https://www.ti.com/lit/gpn/tmag5170-q1'
+PRP Geometry.Height '1.1mm'
+PRP Manufacturer_Name 'Texas Instruments'
+PRP Manufacturer_Part_Number 'TMAG5170A2EDGKRQ1'
+PRP Mouser_Part_Number '595-MAG5170A2EDGKRQ1'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TMAG5170A2EDGKRQ1?qs=doiCPypUmgFsK4QjDrwHCw%3D%3D'
+TOP 0 94.06999982 63.96699932 270 N 79 0 1
+TOP 1 93.42000112 63.96699932 270 N 81 0 2
+TOP 2 92.76999988 63.96699932 270 N 82 0 3
+TOP 3 92.12000118 63.96699932 270 N 80 0 4
+TOP 4 92.12000118 68.36700068 270 N 92 10 5
+TOP 5 92.76999988 68.36700068 270 N 83 34 6
+TOP 6 93.42000112 68.36700068 270 N 83 31 7
+TOP 7 94.06999982 68.36700068 270 N 62 1 8
+#

@@ -1,0 +1,29 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 22:18:46 On 11.07.2026
+
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of PCB Document [Hauptplatine.PcbDoc]
+   Generated File[Hauptplatine_Copper_Signal_Top.gbr]
+   Generated File[Hauptplatine_Copper_Signal_1.gbr]
+   Generated File[Hauptplatine_Copper_Signal_2.gbr]
+   Generated File[Hauptplatine_Copper_Signal_Bot.gbr]
+   Generated File[Hauptplatine_Legend_Top.gbr]
+   Generated File[Hauptplatine_Legend_Bot.gbr]
+   Generated File[Hauptplatine_Soldermask_Top.gbr]
+   Generated File[Hauptplatine_Soldermask_Bot.gbr]
+   Generated File[Hauptplatine_Paste_Top.gbr]
+   Generated File[Hauptplatine_Paste_Bot.gbr]
+   Generated File[Hauptplatine_Mechanical_1.gbr]
+   Generated File[Hauptplatine_Profile.gbr]
+   Generated File[Hauptplatine_NPTH_Drill.gbr]
+   Generated File[Hauptplatine_PTH_Drill.gbr]
+   Generated File[Hauptplatine.EXTREP]
+   Generated File[Hauptplatine.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 22:18:49 On 11.07.2026
