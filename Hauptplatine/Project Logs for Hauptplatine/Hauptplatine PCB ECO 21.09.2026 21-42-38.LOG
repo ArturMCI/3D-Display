@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=VTOP Pin=R32-1
+Added Pin To Net: NetName=NetC15_2 Pin=R32-2
+Added Member To Class: ClassName=Battery-Management Member=Component R32 10

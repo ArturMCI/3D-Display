@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=C32 NewDesignator=32
+Change Net Name : Old Net Name=D- New Net Name=D_N
+Change Net Name : Old Net Name=D+ New Net Name=D_P
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9
+Added Rule: Name=Schematic Supply Nets_10
+Added Rule: Name=Schematic Supply Nets_11

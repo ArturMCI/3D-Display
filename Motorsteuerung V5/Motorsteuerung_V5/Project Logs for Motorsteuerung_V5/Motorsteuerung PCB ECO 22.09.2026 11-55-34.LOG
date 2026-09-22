@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NRST Pin=S12-1
+Removed Pin From Net: NetName=NRST Pin=S12-2
+Removed Pin From Net: NetName=GND Pin=S12-4
+Added Pin To Net: NetName=GND Pin=S12-1
+Added Pin To Net: NetName=GND Pin=S12-2
+Added Pin To Net: NetName=NRST Pin=S12-4

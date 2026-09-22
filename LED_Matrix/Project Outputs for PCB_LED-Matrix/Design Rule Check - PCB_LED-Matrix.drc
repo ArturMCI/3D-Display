@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\abdul\Documents\GITHUB\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc
-Date     : 09.07.2026
-Time     : 19:41:29
+PCB File : C:\Users\abdul\Documents\Altium\3D-Display\LED_Matrix\PCB_LED-Matrix.PcbDoc
+Date     : 22.09.2026
+Time     : 10:50:07
 
 Processing Rule : Clearance Constraint (Gap=0.125mm) (All),(All)
 Rule Violations :0
@@ -57,4 +57,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:00

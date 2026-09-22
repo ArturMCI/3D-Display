@@ -1,0 +1,6 @@
+Added Component: Designator=MH5(MTH)
+Added Component: Designator=MH6(MTH)
+Added Pin To Net: NetName=GND Pin=MH5-1
+Added Pin To Net: NetName=GND Pin=MH6-1
+Added Member To Class: ClassName=Microcontroller Member=Component MH5 MountingHole
+Added Member To Class: ClassName=Microcontroller Member=Component MH6 MountingHole
