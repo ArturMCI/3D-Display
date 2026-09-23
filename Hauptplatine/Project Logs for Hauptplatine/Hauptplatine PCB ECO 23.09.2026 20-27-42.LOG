@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=J5 Old Footprint=LIBRARYSOURCE=Vault|VAULTGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7|REVISIONGUID=8937D37E-57CF-46DE-901F-ED814874CAF6|VAULTFOOTPRINT=629722000214|FOOTPRINT=629722000214 New Footprint=629722000214
+Added Component: Designator=MH1(MTH)
+Added Component: Designator=MH2(MTH)
+Added Component: Designator=MH4(MTH)
+Added Pin To Net: NetName=GND Pin=MH1-1
+Added Pin To Net: NetName=GND Pin=MH2-1
+Added Pin To Net: NetName=GND Pin=MH4-1
+Added Member To Class: ClassName=Microcontroller Member=Component MH1 MountingHole
+Added Member To Class: ClassName=Microcontroller Member=Component MH2 MountingHole
+Added Member To Class: ClassName=Microcontroller Member=Component MH4 MountingHole

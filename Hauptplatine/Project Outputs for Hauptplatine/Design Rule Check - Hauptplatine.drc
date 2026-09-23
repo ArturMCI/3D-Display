@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\abdul\Documents\Altium\3D-Display\Hauptplatine\Hauptplatine.PcbDoc
-Date     : 22.09.2026
-Time     : 14:45:57
+Date     : 23.09.2026
+Time     : 20:26:22
 
 Processing Rule : Clearance Constraint (Gap=0.125mm) (All),(All)
 Rule Violations :0
@@ -10,11 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net D_P Between Pad J5-B6(-0.476mm,47.498mm) on Top Layer [Unplated] And Pad J5-A6(0.524mm,47.498mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net D_P Between Pad J5-A6(0.524mm,47.498mm) on Top Layer [Unplated] And Pad U2-24(1.79mm,43.068mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net D_N Between Via (0mm,48.514mm) from Top Layer to Bottom Layer And Pad J5-A7(0.024mm,47.498mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net D_N Between Track (1.024mm,47.498mm)(1.047mm,47.521mm) on Top Layer And Pad U2-1(1.137mm,43.721mm) on Top Layer 
-Rule Violations :4
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -32,9 +28,7 @@ Processing Rule : Minimum Annular Ring (Minimum=0.3mm) (All)
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
-   Violation between Minimum Annular Ring: (No Ring) Pad J5-MH1(3.164mm,48.568mm) on Multi-Layer (Annular Ring missing on Top Layer)
-   Violation between Minimum Annular Ring: (No Ring) Pad J5-MH2(-2.616mm,48.568mm) on Multi-Layer (Annular Ring missing on Top Layer)
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Hole Size Constraint (Min=0.5mm) (Max=5.6mm) (IsPad)
 Rule Violations :0
@@ -59,25 +53,18 @@ Processing Rule : Silk To Solder Mask (Clearance=0.125mm) (IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0.125mm) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (Collision < 0.125mm) Between Text "C16" (-15.403mm,24.13mm) on Top Overlay And Text "R32" (-12.624mm,23.597mm) on Top Overlay Silk Text to Silk Clearance [0mm]
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Via (0mm,48.514mm) from Top Layer to Bottom Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (0.063mm < 0.254mm) Between Board Edge And Text "J5" (5.461mm,52.451mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.254mm) Between Board Edge And Text "R29" (-6.604mm,54.228mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.254mm) Between Board Edge And Track (-4.196mm,53.458mm)(-4.196mm,54.868mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.254mm) Between Board Edge And Track (-4.196mm,54.868mm)(4.744mm,54.868mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.254mm) Between Board Edge And Track (4.744mm,53.458mm)(4.744mm,54.868mm) on Top Overlay 
-Rule Violations :5
+Rule Violations :0
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 20
+Violations Detected : 7
 Waived Violations : 0
 Time Elapsed        : 00:00:01
