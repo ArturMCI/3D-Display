@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\abdul\Documents\Altium\3D-Display\Hauptplatine\Hauptplatine.PcbDoc
-Date     : 23.09.2026
-Time     : 20:26:22
+Date     : 24.09.2026
+Time     : 09:57:28
 
 Processing Rule : Clearance Constraint (Gap=0.125mm) (All),(All)
 Rule Violations :0
@@ -46,8 +46,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.08mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.035mm < 0.08mm) Between Pad IC4-6(-16.49mm,19.095mm) on Top Layer And Pad IC4-7(-17.19mm,18.395mm) on Top Layer [Top Solder] Mask Sliver [0.035mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.08mm) Between Pad J5-A1/B12(3.474mm,47.498mm) on Top Layer And Pad J5-MH1(3.164mm,48.568mm) on Multi-Layer [Top Solder] Mask Sliver [0.075mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.08mm) Between Pad J5-A12/B1(-2.926mm,47.498mm) on Top Layer And Pad J5-MH2(-2.616mm,48.568mm) on Multi-Layer [Top Solder] Mask Sliver [0.075mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.042mm < 0.08mm) Between Pad R20-2(13.716mm,26.94mm) on Top Layer And Pad R22-1(15.113mm,26.289mm) on Multi-Layer [Top Solder] Mask Sliver [0.042mm]
-Rule Violations :7
+Rule Violations :6
 
 Processing Rule : Silk To Solder Mask (Clearance=0.125mm) (IsPad),(All)
 Rule Violations :0
@@ -65,6 +64,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 7
+Violations Detected : 6
 Waived Violations : 0
 Time Elapsed        : 00:00:01
