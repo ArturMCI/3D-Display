@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=C16 Old Footprint=FP-CC0805-EB-MFG New Footprint=FP-CC1210-G3-MFG
+Change Component Comment : Designator=C16 Old Comment=100nF New Comment=2.2uF
+Change Managed Component Library Link : Designator=C16 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=B4BD0EF1-B9F0-4F01-A27D-22C227A422E3 New ItemGUID=F0783518-511A-4C7C-9474-7C15D8C1A939 Old RevisionGUID=8A9B8A74-CDD4-496E-9958-212D4E8BED85 New RevisionGUID=CF00374F-1326-4443-B29B-72DAF207A993
+Change component parameters: Designator = "C16" ("C16"); Footprint = "FP-CC0805-EB-MFG"; UniqueID = "\PIOUEGLS" ("\PIOUEGLS")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"

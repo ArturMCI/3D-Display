@@ -1,10 +1,6 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 11:50:10 On 10.07.2026
-
 Output: Gerber X2 Files
 Type  : GerberX2
-From  : Variant [[No Variations]] of PCB Document [PCB_LED-Matrix.PcbDoc]
+From  : Variant [[No Variations]] of Project [PCB_LED-Matrix.PrjPcb]
    Generated File[PCB_LED-Matrix_Copper_Signal_Top.gbr]
    Generated File[PCB_LED-Matrix_Copper_Signal_Bot.gbr]
    Generated File[PCB_LED-Matrix_Legend_Top.gbr]
@@ -24,4 +20,4 @@ From  : Variant [[No Variations]] of PCB Document [PCB_LED-Matrix.PcbDoc]
 Files Generated   : 14
 Documents Printed : 0
 
-Finished Output Generation At 11:50:13 On 10.07.2026
+Finished Output Generation At 16:48:13 On 24.09.2026

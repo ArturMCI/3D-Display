@@ -1,0 +1,25 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [Motorsteuerung_V5.PrjPcb]
+   Generated File[Motorsteuerung_Copper_Signal_Top.gbr]
+   Generated File[Motorsteuerung_Copper_Signal_1.gbr]
+   Generated File[Motorsteuerung_Copper_Signal_2.gbr]
+   Generated File[Motorsteuerung_Copper_Signal_Bot.gbr]
+   Generated File[Motorsteuerung_Legend_Top.gbr]
+   Generated File[Motorsteuerung_Legend_Bot.gbr]
+   Generated File[Motorsteuerung_Soldermask_Top.gbr]
+   Generated File[Motorsteuerung_Soldermask_Bot.gbr]
+   Generated File[Motorsteuerung_Paste_Top.gbr]
+   Generated File[Motorsteuerung_Paste_Bot.gbr]
+   Generated File[Motorsteuerung_Mechanical_1.gbr]
+   Generated File[Motorsteuerung_Profile.gbr]
+   Generated File[Motorsteuerung_NPTH_Drill.gbr]
+   Generated File[Motorsteuerung_PTH_Drill.gbr]
+   Generated File[Motorsteuerung.EXTREP]
+   Generated File[Motorsteuerung.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 16:45:17 On 24.09.2026
